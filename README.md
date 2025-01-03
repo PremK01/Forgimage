@@ -18,7 +18,7 @@ Built using **Python**, **Flask**, **HTML**, **CSS**, and **JavaScript**, this a
 ## Screenshots
 
 ### 1. Home Page
-![Forgimage.](Screenshots\Screenshot 1.png)
+![Forgimage.](Screenshots/Screenshot 1.png)
 
 ### 2. Resizing Images
 ![Resizing Image](Screenshots\Screenshot 2.png)

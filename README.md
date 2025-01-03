@@ -18,16 +18,16 @@ Built using **Python**, **Flask**, **HTML**, **CSS**, and **JavaScript**, this a
 ## Screenshots
 
 ### 1. Home Page
-![Forgimage.](Screenshots/Screenshot%201.png)
+![Forgimage.](Screenshots/Screenshot1.png)
 
 ### 2. Resizing Images
-![Resizing Image](Screenshots\Screenshot%202.png)
+![Resizing Image](Screenshots\Screenshot2.png)
 
 ### 3. IMAGE to PDF Conversion
-![IMG to PDF Conversion](Screenshots\Screenshot%203.png)
+![IMG to PDF Conversion](Screenshots\Screenshot3.png)
 
 ### 4. IMAGE format Conversion
-![IMG format Conversion](Screenshots\Screenshot%204.png)
+![IMG format Conversion](Screenshots\Screenshot4.png)
 
 ### 3. PDF to IMAGE Conversion
-![PDF to IMG Conversion](Screenshots\Screenshot%205.png)
+![PDF to IMG Conversion](Screenshots\Screenshot5.png)

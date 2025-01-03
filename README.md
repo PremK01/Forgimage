@@ -15,3 +15,19 @@ Built using **Python**, **Flask**, **HTML**, **CSS**, and **JavaScript**, this a
 - **Image to PDF Conversion**: Convert one or more images into a single PDF file.
 - **PDF to Image Conversion**: Convert each page of a PDF document into an image format.
 
+## Screenshots
+
+### 1. Home Page
+![Forgimage.](Screenshots\Screenshot 1.png)
+
+### 2. Resizing Images
+![Resizing Image](Screenshots\Screenshot 2.png)
+
+### 3. IMAGE to PDF Conversion
+![IMG to PDF Conversion](Screenshots\Screenshot 3.png)
+
+### 4. IMAGE format Conversion
+![IMG format Conversion](Screenshots\Screenshot 4.png)
+
+### 3. PDF to IMAGE Conversion
+![PDF to IMG Conversion](Screenshots\Screenshot 5.png)

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Images to PDF</title>
+    <link rel="stylesheet" href="static/styles/main.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="navbar-brand">Forgimage.</a>
+                <ul class="navbar-nav">
+                    <li><a href="/resize">Resize Image</a></li>
+                    <li><a href="/convert-to-pdf" class="active">Convert to PDF</a></li>
+                    <li><a href="/convert-format">Convert Format</a></li>
+                    <li><a href="/convert-pdf-to-images">PDF to Image</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+        <header>
+            <h1>Convert Images to PDF</h1>
+        </header>
+        <form action="/convert-to-pdf" method="POST" enctype="multipart/form-data">
+            <label for="images">Select Images:</label>
+            <input type="file" name="images" id="images" multiple required>
+
+            <button type="submit">Convert to PDF</button>
+        </form>
+    </div>
+</body>
+</html>

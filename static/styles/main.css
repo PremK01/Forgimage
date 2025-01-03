@@ -1,0 +1,209 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least the full height of the screen */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #ffd700; /* Golden color for the text */
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.7), 0 0 5px rgba(255, 215, 0, 0.7); /* 3D Effect */
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-left: 20px; /* Ensure some space between the logo and left edge */
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    flex-grow: 1; /* Ensure the nav items take up available space */
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav a:hover {
+    color: #3498db; /* Color when hovering over the link */
+}
+
+/* GitHub Icon */
+.github-icon {
+    margin-right: 20px; /* Ensure space between the icon and the edge */
+    color: #fff;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+.github-icon:hover {
+    color: #3498db; /* Color when hovering over the icon */
+}
+
+/* Page-Specific Content Centering (for pages excluding the home page) */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center; /* Center the content */
+    margin-top: 70px; /* Adjust for the fixed navbar */
+}
+
+/* Hero Section */
+.home-hero {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 70px; /* Adjust for the fixed navbar */
+    flex-grow: 1; /* Ensure the content area grows and pushes the footer down */
+}
+
+.main-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Darker color for "Welcome to Forgimage" */
+    font-weight: bold;
+    animation: fadeInFromBottom 1.5s ease-out;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    animation: fadeInFromTop 1.5s ease-out;
+}
+
+.home-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 150px; /* Add gap between the cards */
+}
+
+.tool-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-top: auto; /* This ensures the footer stays at the bottom */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Add smooth buttons and inputs */
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+input[type="file"],
+input[type="text"],
+select {
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Animations */
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

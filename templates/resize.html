@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="navbar-brand">Forgimage.</a>
+                <ul class="navbar-nav">
+                    <li><a href="/resize" class="active">Resize Image</a></li>
+                    <li><a href="/convert-to-pdf">Convert to PDF</a></li>
+                    <li><a href="/convert-format">Convert Format</a></li>
+                    <li><a href="/convert-pdf-to-images">PDF to Image</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Flash Messages Section -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="flash-container">
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Page Content -->
+    <div class="container">
+        <header>
+            <h1>Resize Your Image</h1>
+        </header>
+        <form action="/resize" method="POST" enctype="multipart/form-data">
+            <label for="file">Select Image:</label>
+            <input type="file" name="file" id="file" required>
+
+            <label for="width">Width (px):</label>
+            <input type="number" name="width" id="width" required>
+
+            <label for="height">Height (px):</label>
+            <input type="number" name="height" id="height" required>
+
+            <button type="submit">Resize Image</button>
+        </form>
+    </div>
+</body>
+</html>

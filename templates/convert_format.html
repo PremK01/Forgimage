@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Image Format</title>
+    <link rel="stylesheet" href="static/styles/main.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="navbar-brand">Forgimage.</a>
+                <ul class="navbar-nav">
+                    <li><a href="/resize">Resize Image</a></li>
+                    <li><a href="/convert-to-pdf">Convert to PDF</a></li>
+                    <li><a href="/convert-format" class="active">Convert Format</a></li>
+                    <li><a href="/convert-pdf-to-images">PDF to Image</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+        <header>
+            <h1>Convert Image Format</h1>
+        </header>
+        <form action="/convert-format" method="POST" enctype="multipart/form-data">
+            <label for="file">Select Image:</label>
+            <input type="file" name="file" id="file" required>
+
+            <label for="format">Select Format:</label>
+            <select name="format" id="format">
+                <option value="jpg">JPG</option>
+                <option value="png">PNG</option>
+                <option value="bmp">BMP</option>
+                <option value="gif">GIF</option>
+            </select>
+
+            <button type="submit">Convert Format</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -21,13 +21,13 @@ Built using **Python**, **Flask**, **HTML**, **CSS**, and **JavaScript**, this a
 ![Forgimage.](Screenshots/Screenshot1.png)
 
 ### 2. Resizing Images
-![Resizing Image](Screenshots\Screenshot2.png)
+![Resizing Image](Screenshots/Screenshot2.png)
 
 ### 3. IMAGE to PDF Conversion
-![IMG to PDF Conversion](Screenshots\Screenshot3.png)
+![IMG to PDF Conversion](Screenshots/Screenshot3.png)
 
 ### 4. IMAGE format Conversion
-![IMG format Conversion](Screenshots\Screenshot4.png)
+![IMG format Conversion](Screenshots/Screenshot4.png)
 
 ### 3. PDF to IMAGE Conversion
-![PDF to IMG Conversion](Screenshots\Screenshot5.png)
+![PDF to IMG Conversion](Screenshots/Screenshot5.png)

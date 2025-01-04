@@ -6,7 +6,7 @@ This web application allows users to:
 3. Convert images into PDF documents.
 4. Convert PDF documents into images.
 
-Built using **Python**, **Flask**, **HTML**, **CSS**, and **JavaScript**, this app provides an intuitive and simple user interface to handle common image and PDF conversion tasks.
+Built using **Python**, **Flask**, **HTML**, **CSS**, and **JavaScript**, this app provides an intuitive and simple user interface to handle common image and PDF conversion tasks without the risk of your data being exposed.
 
 ## Features
 
@@ -15,7 +15,18 @@ Built using **Python**, **Flask**, **HTML**, **CSS**, and **JavaScript**, this a
 - **Image to PDF Conversion**: Convert one or more images into a single PDF file.
 - **PDF to Image Conversion**: Convert each page of a PDF document into an image format.
 
-## Screenshots
+## Installation
+
+### 1. Clone the Repository
+Clone the repository to your local machine
+### 2. Install the dependencies
+Check the requirements.txt
+### 3. Install Poppler (for PDF to Image conversion)
+-Download and Install Poppler in your local machine. 
+-Update the poppler_path variable in app.py to point to the Poppler bin folder
+#### 4. You are all set,now you can run the app.
+
+## App Screenshots
 
 ### 1. Home Page
 ![Forgimage.](Screenshots/Screenshot1.png)

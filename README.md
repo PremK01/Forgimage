@@ -24,7 +24,7 @@ Check the requirements.txt
 ### 3. Install Poppler (for PDF to Image conversion)
 -Download and Install Poppler in your local machine. 
 -Update the poppler_path variable in app.py to point to the Poppler bin folder
-#### 4. You are all set,now you can run the app.
+### 4. You are all set,now you can run the app.
 
 ## App Screenshots
 

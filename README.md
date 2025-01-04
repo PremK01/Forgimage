@@ -40,5 +40,5 @@ Check the requirements.txt
 ### 4. IMAGE format Conversion
 ![IMG format Conversion](Screenshots/Screenshot4.png)
 
-### 3. PDF to IMAGE Conversion
+### 5. PDF to IMAGE Conversion
 ![PDF to IMG Conversion](Screenshots/Screenshot5.png)
